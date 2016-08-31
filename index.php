@@ -116,10 +116,6 @@ li.dropdown {
     <head>
         <meta charset="utf-8" />
         <title>Amotube</title>
-		<link rel="stylesheet" type="text/css"
-	href="./vue/css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css"
-	href="./vue/css/default3.css" />
 	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
 	function visibilite(thingId) {            
                 var targetElement;
@@ -189,7 +185,7 @@ li.dropdown {
 			</nav>';
 	 }else{
 	 echo "
-    <nav class='midle'>
+    <nav>
 		<br/>
 		<h3>Bienvenue dans le site d'amotube</h3>
 		<section >AMOTUB : Association Mauritanienne d'Orientation et du Tutorat des Bacheliers.<br/>
