@@ -25,7 +25,7 @@ html,
     #login{
       background-repeat: no-repeat;
       background-position: 95% 30%;
-      background-image:url("../images/recherche.png");
+      background-image:url("./images/recherche.png");
       background-size: 15% auto;
       margin-left:80%;
     }
@@ -89,26 +89,26 @@ ul{z-index:1;}
 body{z-index:-1;}
 </style>
  <header style='margin-right: 18px;' id="header">
-    <div float="left" style="display: inline;margin-right: 30%"  ><img src='../images/amotub.png' style=' height:50px; with:50px;' /></div>
+    <div float="left" style="display: inline;margin-right: 30%"  ><img src='./images/amotub.png' style=' height:50px; with:50px;' /></div>
     <div float='center' style="display: inline; margin-right: 45%" >Amotub</div>
-    <div float="left" style="display: inline;margin-right: 18px"  ><img src='../images/english.png' style=' height:15px; with:15px;' /></div>
+    <div float="left" style="display: inline;margin-right: 18px"  ><img src='./images/english.png' style=' height:15px; with:15px;' /></div>
     <div style="display: inline ; margin-right: 18px"  float ='left' id ='div2'> 
       <div  style="display: inline;margin-right: 18px" float ='left'> ENG</div> 
-      <div float="left" style="display: inline;margin-right: 18px"  ><img src='../images/cadnas1.png' style=' height:15px; with:15px;' /></div>
-      <a href='connexion.php' class="dropbtn" name="login" >login</a>
-      <form action="../model/search.php" method="POST" align="center" id="connexion" >
+      <div float="left" style="display: inline;margin-right: 18px"  ><img src='./images/cadnas1.png' style=' height:15px; with:15px;' /></div>
+      <a href='./connexion.php' class="dropbtn" name="login" >login</a>
+      <form action="./../model/search.php" method="POST" align="center" id="search" >
       <div id="login">
         <input type="text" name="login" />
       </div>
       </form>
     </div>
-  </header>   
+  </header>  
 </head>
  <body>  
   <div>   
    <ul>
         <li>
-        <a href="../index.php"  >Accueil</a>
+        <a href="./index.php"  >Accueil</a>
       </li>
       <li class="dropdown">
           <a  class="dropbtn" name="leçons" >Leçons</a>
