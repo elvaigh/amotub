@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['pseudo']=null;
-      session_write_close ();
-      header('Location: /bacenpoche/index.php');
+$_SESSION['pseudo']='';
+session_destroy();
+header('Location: index.php');
 ?>

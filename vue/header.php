@@ -1,3 +1,14 @@
+<?php
+if(isset($_SESSION['pseudo']) && $_SESSION['pseudo']!=''){
+  $loginImg='images/logout.png';
+  $status="Déconnexion";
+  $target='deconnexion.php';
+}else{
+  $loginImg='images/cadnas.png';
+  $status="Connexion";
+  $target='connexion.php';
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +27,10 @@
 
    <header id="header">
 
-    <form action="./../model/search.php" method="POST" align="center" id="search" >
+    <form action="../controleur/controleur.php" method="POST" align="center" id="search" >
       <!--  <div id="login"> !-->
           <p style="text-align: center; ">Recherche</p>
-            <input type="text" name="login" />
+            <input type="text" name="search" />
             <img src="images/search.png" id="loupe"/>
         <!--</div>-!-->
     </form>  
@@ -30,9 +41,9 @@
           <div float="left" style="display: inline;margin-right: 18px"  ><img src='images/english.png' style=' height:15px; with:15px;' /></div>
           <div style="display: inline ; margin-right: 18px"  float ='left' id ='div2'></div>
           <div  style="display: inline;margin-right: 18px" float ='left'> ENG</div> 
-          <div float="left" style="display: inline;margin-right: 18px"  ><img src='images/cadnas1.png' style=' height:15px; with:15px;' /></div>
+          <div float="left" style="display: inline;margin-right: 18px"  ><img src=<?php echo $loginImg;?> style=' height:15px; with:15px;' /></div>
         
-            <a href='./connexion.php' class="dropbtn" name="connexion">connexion</a>
+            <a href=<?php echo $target;?> class="dropbtn" name="connexion"><?php echo $status; ?></a>
       </div>  
     </header> 
 
