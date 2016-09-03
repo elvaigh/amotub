@@ -35,6 +35,9 @@ include_once("header.php");
 			      </div>
 			    </div>
                 <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                 <div class="col-sm-offset-0 col-sm-10">
+			        <label><a href="inscription.php"> S"inscrire</a></label>
+			    </div>
             </div>
         </form>
     </div>
@@ -62,7 +65,7 @@ include_once("header.php");
 					$_SESSION['id'] = $resultat['id'];
 					$_SESSION['pseudo']=$_POST["pseudo"];
 					$req->closeCursor(); 
-					header('Location: http://bacenpoche.hebfree.org/bacenpoche/index.php');
+					header('Location:index.php');
 				}
 				
 		}
