@@ -1,0 +1,308 @@
+html,body {
+      height: 100%;
+      z-index: -1;
+
+      /* The html and body elements cannot have any padding or margin. */
+}
+
+
+#header {
+    z-index: 1;
+    position: fixed;
+    }
+
+    /*M*/
+#search{
+    display: inline;
+    position: fixed;
+    margin-top: 2.5%
+}
+#loupe{
+    width:15px; 
+}
+
+#titre{
+    display:inline;
+    margin-left: 40%;
+    margin-right: auto;
+    height:120px; 
+    with:70px;
+    float :left;
+}
+
+#droite{ /* ENG et connexion*/
+    position: fixed;
+    padding-left: 10%;
+    display: inline;
+}
+
+/*
+#iconeAmotube{
+    height:50px; 
+    with:50px;
+}*/
+/*h1{
+    text-align: center;
+    style : display: inline;
+    color : rgb(237, 237, 237);
+    font-family: 'Raleway',sans-serif;
+    font-size: 60px;
+    text-transform : uppercase;
+    letter-spacing : 0,4em;
+
+}*/
+
+#menu{
+
+}
+
+/*Barre de recherche*/
+
+#login{
+    background-repeat: no-repeat;
+    background-position: 95% 30%;
+    background-image:url("search.png");
+    background-size: 10% auto;
+    margin-left:80%;
+}
+
+
+/*menu */
+nav{
+    margin-top: 10%;
+    margin-left: 10%;
+    position: fixed;
+}
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    aborder-radius: 5px 10px 0 5px;
+
+/*M*/
+    max-width: 1240px;
+    list-style: none;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.ico{
+    width: 20px;
+}
+.icoAnnales{
+    width: 23px;
+}
+
+/*liens du menu*/
+.nav a {
+    display: block;
+    color: rgba(249, 249, 249, 0.9);
+    text-decoration: none;
+    transition: color .5s, background .5s, height .5s;
+}
+
+li {
+    float: left;
+  
+}
+
+/*M*/
+.nav li span {
+    display: block;
+}
+
+.nav i{
+    /* Make the font smoother for Chrome */
+    transform: translate3d(0, 0, 0);
+}
+
+
+a, button {   /* Remove the blue Webkit background when element is tapped */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/**fin**/
+
+li a, .dropbtn { /*login*/
+    display: inline-block;
+    color: rgb(48, 48, 48);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index:20;
+}
+
+
+li a:hover, .dropdown:hover .dropbtn {
+  /*  background-color: red;*/
+}
+
+
+
+/*Sous menu */
+
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content { /* style du background du sous menu */
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {  /* style de l'écriture du sous menu */
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {  } /* hover sous menu */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+div a { /*footer -> à redigner et mettre dans une balise footer*/
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+    color:pink;
+}
+
+/*?*/
+ul li ul li a {display:block !important;}
+ul{z-index:1;}
+
+
+/*M*/
+/* hover, focused and active effects that add a little colored border to the different items */
+
+    .no-touch .nav li:nth-child(8n+1) a:hover,
+    .no-touch .nav li:nth-child(8n+1) a:active,
+    .no-touch .nav li:nth-child(8n+1) a:focus {
+        border-bottom: 5px solid rgb(255, 222, 117);
+    }
+
+    .no-touch .nav li:nth-child(8n+2) a:hover,
+    .no-touch .nav li:nth-child(8n+2) a:active,
+    .no-touch .nav li:nth-child(8n+2) a:focus {
+        border-bottom: 5px solid rgb(133, 193, 126);
+    }
+
+    .no-touch .nav li:nth-child(8n+3) a:hover,
+    .no-touch .nav li:nth-child(8n+3) a:active,
+    .no-touch .nav li:nth-child(8n+3) a:focus {
+        border-bottom: 5px solid rgb(12, 110, 149);
+    }
+
+    .no-touch .nav li:nth-child(8n+4) a:hover,
+    .no-touch .nav li:nth-child(8n+4) a:active,
+    .no-touch .nav li:nth-child(8n+4) a:focus {
+        border-bottom: 5px solid rgb(10, 75, 117);
+    }
+
+    .no-touch .nav li:nth-child(8n+5) a:hover,
+    .no-touch .nav li:nth-child(8n+5) a:active,
+    .no-touch .nav li:nth-child(8n+5) a:focus {
+        border-bottom: 5px solid rgb(16, 34, 44);
+    }
+
+    .no-touch .nav li:nth-child(8n+6) a:hover,
+    .no-touch .nav li:nth-child(8n+6) a:active,
+    .no-touch .nav li:nth-child(8n+6) a:focus {
+        border-bottom: 5px solid rgb(90, 94, 107);
+    }
+
+    .no-touch .nav li:nth-child(8n+7) a:hover,
+    .no-touch .nav li:nth-child(8n+7) a:active,
+    .no-touch .nav li:nth-child(8n+7) a:focus {
+        border-bottom: 5px solid rgb(126, 88, 53);
+    }
+
+
+    .no-touch .nav li:nth-child(8n+8) a:hover,
+    .no-touch .nav li:nth-child(8n+8) a:active,
+    .no-touch .nav li:nth-child(8n+8) a:focus {
+        border-bottom: 5px solid rgb(145, 40, 59);
+    }
+
+
+
+/* M 2 septembre */
+
+.nav li:nth-child(8n+1) {
+    background: rgb(255, 222, 117);
+}
+
+.nav li:nth-child(8n+2) {
+    background: rgb(133, 193, 126);
+}
+
+.nav li:nth-child(8n+3) {
+    background: rgb(12, 110, 149);
+}
+
+.nav li:nth-child(8n+4) {
+    background: rgb(10, 75, 117);
+}
+
+.nav li:nth-child(8n+5) {
+    background: rgb(16, 34, 44);
+}
+
+.nav li:nth-child(8n+6) {
+    background: rgb(90, 94, 107);
+}
+
+.nav li:nth-child(8n+7) {
+    background: rgb(126, 88, 53);
+}
+
+.nav li:nth-child(8n+8) {
+    background: rgb(145, 40, 59);
+}
+
+
+/*design des sous menu*/
+
+.dropdown:hover:nth-child(8n+2) .dropdown-content{
+    background: rgb(133, 193, 126);
+}
+
+.dropdown:hover:nth-child(8n+3) .dropdown-content{
+    background: rgb(12, 110, 149);
+}
+
+.dropdown:hover:nth-child(8n+4) .dropdown-content{
+    background: rgb(10, 75, 117);
+}
+
+.dropdown:hover:nth-child(8n+5) .dropdown-content{
+    background: rgb(16, 34, 44);
+    color:rgb(10, 75, 117);
+
+}
+
+
+
+
+/*.dropdown-content a:nth-child(8n+3){ /* CA MARCHE  pour une partie du sous menu
+        background: rgba(146, 109, 39, 0.99);
+}
+*/
+
+/* design au moment des actions*/
+.no-touch .nav ul:hover a:hover { /* le menu touché*/
+    color: rgba(249, 249, 249, 0.99);
+}
+
+.no-touch .nav ul:hover a { /*les autres*/
+    color: rgba(249, 249, 249, .5);
+}
+
+
