@@ -95,7 +95,7 @@
 </nav>
 
 
-<script type="text/javascript" src="vue/script/modernizr.custom.js"></script>
+<script type="text/javascript" src="script/modernizr.custom.js"></script>
 
 </body>
 </html>
