@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
-
+    <script type="text/javascript" src="script/modernizr.custom.js"></script>
 </head>
 
  <body>  
@@ -93,10 +93,6 @@
 
     </ul>
 </nav>
-
-
-<script type="text/javascript" src="script/modernizr.custom.js"></script>
-
 </body>
 </html>
 
