@@ -1,0 +1,48 @@
+
+		html, body {
+			height: 100%;
+			margin: 0; padding: 0;
+		}
+		body {
+			display : table;
+			width: 100%;
+			 max-width:1280px;
+
+min-height:100%;
+
+margin:0 auto;
+
+position:relative;
+		}
+		footer {
+			display : table-row;
+			height: 15px; 
+			width:100%;			
+			color: white;
+			bottom: 0;
+			position:absolute;
+			padding-top:100px; 
+			left: 0; 
+			right: 0
+		}
+
+		.foot{
+			padding-bottom:2%;
+		}
+		#Copyright{
+			float:left;
+			display: inline;
+			margin-left:20px;
+		}
+		#page{
+			float:center;
+			display: inline;
+			margin-left:35%;
+		}
+		#contact{ 
+			float:right; 
+			display: inline; 
+			margin-right:20px;}
+
+			*{
+

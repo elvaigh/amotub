@@ -1,0 +1,303 @@
+
+body{
+    background: url("../images/impossible.png") no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+/*TOUT LE HEADER*/
+
+#hautDePage{
+    
+}
+/**************************TOP : titre etc ******************************/
+#top {
+    margin-top:1%;
+    height: 100px;
+    color:black;
+
+}
+
+#search{
+    padding-top: 20px;
+    float:left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+#inputSearch{
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(47, 79, 79,0.5);
+    border-color: rgb(36, 68, 92);
+    border:1px solid #ccc;
+    border-radius: 4px;
+    display:inline;
+    font-size:13px;
+}
+#loupe{
+    width:15px; 
+}
+
+#titre{
+    height:100px; 
+    with:80px;
+    display: inline;
+    padding-left: 160px;
+   
+}
+
+#droite{
+    float: right;
+    display: inline;
+}
+
+.icones{
+    height:15px; with:15px
+}
+
+/********************BAS : MENU *******************************/
+
+/*menu */
+nav{
+    position: fixed;
+}
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    aborder-radius: 5px 10px 0 5px;
+    margin-left: 8%;
+    font-family: "Times New Roman", Times, serif;
+
+/*M*/
+    max-width: 1240px;
+    list-style: none;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.ico{
+    width: 22px;
+}
+.icoAnnales{
+    width: 24px;
+}
+.icoAcCon{
+    width:20px;
+}
+
+/*liens du menu*/
+.nav a {
+    display: block;
+    color: rgba(249, 249, 249, 0.9);
+    text-decoration: none;
+    transition: color .5s, background .5s, height .5s;
+
+}
+
+li {
+    float: left;
+  
+}
+
+
+/*M*/
+.nav li span {
+    display: block;
+}
+
+.nav i{
+    /* Make the font smoother for Chrome */
+    transform: translate3d(0, 0, 0);
+}
+
+
+a, button {   /* Remove the blue Webkit background when element is tapped */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/**fin**/
+
+li a, .dropbtn { /*login*/
+    display: inline-block;
+    color: rgb(48, 48, 48);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index:20;
+}
+
+
+li a:hover, .dropdown:hover .dropbtn {
+  /*  background-color: red;*/
+}
+
+
+
+/*Sous menu */
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content { /* style du background du sous menu */
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {  /* style de l'écriture du sous menu */
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {  } /* hover sous menu */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+div a { /*footer -> à redigner et mettre dans une balise footer*/
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+    color:pink;
+}
+
+/*?*/
+ul li ul li a {display:block !important;}
+ul{z-index:1;}
+
+
+/*M*/
+/* hover, focused and active effects that add a little colored border to the different items */
+
+    .no-touch .nav li:nth-child(8n+1) a:hover,
+    .no-touch .nav li:nth-child(8n+1) a:active,
+    .no-touch .nav li:nth-child(8n+1) a:focus {
+        border-bottom: 5px solid rgb(9, 82, 40);
+    }
+
+    .no-touch .nav li:nth-child(8n+2) a:hover,
+    .no-touch .nav li:nth-child(8n+2) a:active,
+    .no-touch .nav li:nth-child(8n+2) a:focus {
+        border-bottom: 5px solid rgb(47, 79, 79);
+    }
+
+    .no-touch .nav li:nth-child(8n+3) a:hover,
+    .no-touch .nav li:nth-child(8n+3) a:active,
+    .no-touch .nav li:nth-child(8n+3) a:focus {
+        border-bottom: 5px solid rgb(76, 166, 107);
+    }
+
+    .no-touch .nav li:nth-child(8n+4) a:hover,
+    .no-touch .nav li:nth-child(8n+4) a:active,
+    .no-touch .nav li:nth-child(8n+4) a:focus {
+        border-bottom: 5px solid rgb(64, 130, 109);
+    }
+
+    .no-touch .nav li:nth-child(8n+5) a:hover,
+    .no-touch .nav li:nth-child(8n+5) a:active,
+    .no-touch .nav li:nth-child(8n+5) a:focus {
+        border-bottom: 5px solid rgb(142, 162, 198);
+    }
+
+    .no-touch .nav li:nth-child(8n+6) a:hover,
+    .no-touch .nav li:nth-child(8n+6) a:active,
+    .no-touch .nav li:nth-child(8n+6) a:focus {
+        border-bottom: 5px solid rgb(84, 114, 174);
+    }
+
+    .no-touch .nav li:nth-child(8n+7) a:hover,
+    .no-touch .nav li:nth-child(8n+7) a:active,
+    .no-touch .nav li:nth-child(8n+7) a:focus {
+        border-bottom: 5px solid rgb(16, 52, 166);
+    }
+
+
+    .no-touch .nav li:nth-child(8n+8) a:hover,
+    .no-touch .nav li:nth-child(8n+8) a:active,
+    .no-touch .nav li:nth-child(8n+8) a:focus {
+        border-bottom: 5px solid rgb(0, 51, 102);
+    }
+
+
+
+/* M 2 septembre */
+
+.nav li:nth-child(8n+1) {
+    background: rgb(9, 82, 40);
+}
+
+.nav li:nth-child(8n+2) {
+    background: rgb(47, 79, 79);
+}
+
+.nav li:nth-child(8n+3) {
+    background: rgb(76, 166, 107);
+}
+
+.nav li:nth-child(8n+4) {
+    background: rgb(64, 130, 109);
+}
+
+.nav li:nth-child(8n+5) {
+    background: rgb(142, 162, 198);
+}
+
+.nav li:nth-child(8n+6) {
+    background: rgb(84, 114, 174);
+}
+
+.nav li:nth-child(8n+7) {
+    background: rgb(16, 52, 166);
+}
+
+.nav li:nth-child(8n+8) {
+    background: rgb(0, 51, 102);
+}
+
+
+/*design des sous menu*/
+
+.dropdown:hover:nth-child(8n+2) .dropdown-content{
+    background: rgb(133, 193, 126);
+}
+
+.dropdown:hover:nth-child(8n+3) .dropdown-content{
+    background: rgb(12, 110, 149);
+}
+
+.dropdown:hover:nth-child(8n+4) .dropdown-content{
+    background: rgb(10, 75, 117);
+}
+
+.dropdown:hover:nth-child(8n+5) .dropdown-content{
+    background: rgb(16, 34, 44);
+    color:rgb(10, 75, 117);
+
+}
+
+
+
+
+/*.dropdown-content a:nth-child(8n+3){ /* CA MARCHE  pour une partie du sous menu
+        background: rgba(146, 109, 39, 0.99);
+}
+*/
+
+/* design au moment des actions*/
+.no-touch .nav ul:hover a:hover { /* le menu touché*/
+    color: rgba(249, 249, 249, 0.99);
+}
+
+.no-touch .nav ul:hover a { /*les autres*/
+    color: rgba(249, 249, 249, .5);
+}
+
+
