@@ -9,7 +9,7 @@
 	
   </head>
   <body>
-	<footer>   
+	<footer id="footer">   
 		<lablel id='Copyright' class="foot">Amotub, Copyright </lablel>
 		<a href='https://www.facebook.com/amotub/' id='page' class="foot">Notre page facebook</a> 
 		<a href='https://www.facebook.com/amotub/' id='contact' class="foot">contacts</a> 

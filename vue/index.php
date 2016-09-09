@@ -31,11 +31,30 @@ include_once("header.php");
     </head>
     <body >
 
-    <div id="acceuil">
-    <h4>Qu'est ce qu'Amotub?</h4>  
-    <p> Amotub est une association crée et administrée par de jeunes étudiants mauritaniens, partout dans le monde. Elle a pour seul et unique but de venir en aide aux lycéens mauritaniens pour obtenir de la meilleure des manières leur baccalauréat. </p>
-    </div>
+        <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>AMOTUB</h1>
+                        <h3>Association Mauritanienne pour l'Orientation et le Tutorat des Bacheliers</h3>
+                        <hr class="intro-divider">
+                        <p> Amotub est une association crée et administrée par de jeunes étudiants mauritaniens, partout dans le monde. Elle a pour seul et unique but de venir en aide aux lycéens mauritaniens pour obtenir de la meilleure des manières leur baccalauréat </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
 
    <?php 
 	if(isset($_SESSION['pseudo'])&&$_SESSION['pseudo']!=null){

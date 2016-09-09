@@ -1,36 +1,66 @@
+html{
+    margin-top:0.5%;
+}
+
+body, #top .nav, .droite{
+    margin: 0;
+    padding: 0;
+}
+
 
 body{
-    background: url("../images/impossible.png") no-repeat center fixed; 
+   /* background: url("../images/impossible.png") no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+  /*background-size: cover; /* version standardisée */
+  
 }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family:Tahoma;
+ font-weight: 700;
+}
+
+
 /*TOUT LE HEADER*/
 
-#hautDePage{
-    
+#hautDePage{ 
+    padding: 0;
+    margin: 0;
+    background-color: hsl(240, 40%, 12%);
+    height: 102px;
 }
+
+
 /**************************TOP : titre etc ******************************/
 #top {
-    margin-top:1%;
-    height: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 50px;
     color:black;
 
 }
 
 #search{
-    padding-top: 20px;
     float:left;
-    font-family: "Times New Roman", Times, serif;
+  
     font-size: 18px;
+    color:white;
+    font-weight: 300;
+
 }
 
 #inputSearch{
-    font-family: "Times New Roman", Times, serif;
     background-color: rgba(47, 79, 79,0.5);
     border-color: rgb(36, 68, 92);
     border:1px solid #ccc;
     border-radius: 4px;
-    display:inline;
+   /* display:inline;*/
     font-size:13px;
 }
 #loupe{
@@ -38,20 +68,52 @@ body{
 }
 
 #titre{
-    height:100px; 
-    with:80px;
     display: inline;
-    padding-left: 160px;
+    padding: 0;
+    padding-left: 170px;
    
 }
+#logo{
+    height:55px; 
+}
+/*
+#title{
+     display: inline;
+     text-transform: uppercase;
+     padding-bottom: 2%;
 
-#droite{
+
+ margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+color: #ffffff;  font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; 
+ 
+}*/
+
+#droite {
     float: right;
+    width: 140px;
     display: inline;
+    color : white;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 0;
+    font-weight: 300;
+    font-size: 11px;
+    background-color: rgb(76, 166, 107);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+#connexion{
+    color : white;
+    font-weight: 300;
+    font-size: 13px;
 }
 
 .icones{
-    height:15px; with:15px
+    height:13px; with:13px
 }
 
 /********************BAS : MENU *******************************/
@@ -59,29 +121,27 @@ body{
 /*menu */
 nav{
     position: fixed;
+    background-color: pink;
 }
 .nav ul {
     list-style-type: none;
     overflow: hidden;
     aborder-radius: 5px 10px 0 5px;
-    margin-left: 8%;
-    font-family: "Times New Roman", Times, serif;
-
+   
 /*M*/
-    max-width: 1240px;
     list-style: none;
-    font-size: 1.1em;
+    font-size: 0.1em;
     font-weight: 300;
 }
 
 .ico{
-    width: 22px;
+    width: 20px;
 }
 .icoAnnales{
-    width: 24px;
+    width: 22px;
 }
 .icoAcCon{
-    width:20px;
+    width:18px;
 }
 
 /*liens du menu*/
@@ -90,12 +150,15 @@ nav{
     color: rgba(249, 249, 249, 0.9);
     text-decoration: none;
     transition: color .5s, background .5s, height .5s;
+    text-transform: uppercase;
+    font-size:15px;
 
 }
 
-li {
+li{
     float: left;
-  
+    margin-left: 0.5%;
+    
 }
 
 
@@ -116,11 +179,11 @@ a, button {   /* Remove the blue Webkit background when element is tapped */
 
 /**fin**/
 
-li a, .dropbtn { /*login*/
+li a { /*login*/
     display: inline-block;
     color: rgb(48, 48, 48);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     z-index:20;
 }
@@ -146,8 +209,8 @@ li.dropdown {
 }
 
 .dropdown-content a {  /* style de l'écriture du sous menu */
-    color: white;
-    padding: 12px 16px;
+    color:hsl(240, 40%, 12%);
+    padding: 17px 0px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -164,7 +227,7 @@ li.dropdown {
 div a { /*footer -> à redigner et mettre dans une balise footer*/
     text-decoration: none;
     font-size: 20px;
-    padding: 15px;
+    
     display:inline-block;
     color:pink;
 }
@@ -177,7 +240,7 @@ ul{z-index:1;}
 /*M*/
 /* hover, focused and active effects that add a little colored border to the different items */
 
-    .no-touch .nav li:nth-child(8n+1) a:hover,
+ /*   .no-touch .nav li:nth-child(8n+1) a:hover,
     .no-touch .nav li:nth-child(8n+1) a:active,
     .no-touch .nav li:nth-child(8n+1) a:focus {
         border-bottom: 5px solid rgb(9, 82, 40);
@@ -230,7 +293,7 @@ ul{z-index:1;}
 
 /* M 2 septembre */
 
-.nav li:nth-child(8n+1) {
+/*.nav li:nth-child(8n+1) {
     background: rgb(9, 82, 40);
 }
 
@@ -265,7 +328,7 @@ ul{z-index:1;}
 
 /*design des sous menu*/
 
-.dropdown:hover:nth-child(8n+2) .dropdown-content{
+/*.dropdown:hover:nth-child(8n+2) .dropdown-content{
     background: rgb(133, 193, 126);
 }
 
@@ -292,12 +355,12 @@ ul{z-index:1;}
 */
 
 /* design au moment des actions*/
-.no-touch .nav ul:hover a:hover { /* le menu touché*/
+/*.no-touch .nav ul:hover a:hover { /* le menu touché
     color: rgba(249, 249, 249, 0.99);
 }
 
-.no-touch .nav ul:hover a { /*les autres*/
+.no-touch .nav ul:hover a { /*les autres
     color: rgba(249, 249, 249, .5);
-}
+}*/
 
 

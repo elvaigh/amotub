@@ -1,29 +1,28 @@
 html, body {margin: 0; padding: 0;}
-body{
-	background: url("../images/impossible.png") no-repeat center fixed; 
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
-}
+
 
 #formulaire{
 	border: 2px solid #ff0000;
 	margin : 0 auto;
 	width: 430px;
-	height: 320px;
-	border-color: rgba(0, 51, 102,0.5);
+	height: 290px;
+	border-color: hsl(240, 40%, 12%);;
 	border-radius: 20px;
-	margin-top: 3%;
+	margin-top: 5%;
 	background-color: rgba(254, 254, 254,0.7);
-	color:rgb(0, 51, 102);
+	color:hsl(240, 40%, 12%);
+	marging-bottom: 50px;
 
 }
 
 #h3{
 	text-align: center;
-	color:rgba(0, 51, 102,1);
+	color:hsl(240, 40%, 12%);
 	font-weight: bold;
 	font-size: 22px;
 	font-family:'Bookman Old Style', serif;
+	padding-bottom: 3px;
+	border-bottom: 1px dashed;
 }
 form{
 	margin-left: 5%;
@@ -52,7 +51,7 @@ form{
 input[type=submit]{ 
 
 	width: 96%;
-    background-color: rgba(0, 51, 102,1);
+    background-color: hsl(240, 40%, 12%);;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -68,6 +67,7 @@ input[type=submit]:hover {
 }
 
 #sinscrire{
-	color:rgb(0, 51, 102);
+	color:hsl(240, 40%, 12%);
 	float: right;
+	font-size: 15px;
 }
