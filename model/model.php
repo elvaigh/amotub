@@ -29,4 +29,17 @@ function signUp($pseudo,$nom,$prenom,$mail,$mdp,$age,$ville,$serie,$lycee){
 	}
 	return $_SESSION['inscriptionErreur'];
 }
+
+function search($keyWord){
+	try{
+		$bdd= new PDO('mysql:host=localhost;dbname=bacenpoche0','root','',array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+		$req = $bdd->prepare("SELECT * FROM cours WHERE description LIKE :requete ORDER BY nom DESC"); // la requête, que vous devez maintenant comprendre
+	    $req->execute(array('requete' => $keyWord));
+		$resultat = $req->fetch();
+		$req->closeCursor(); 
+	}catch (Exception $e){ // On va attraper les exceptions "Exception" s'il y en a une qui est levée.
+		$resultat=false;		
+	}
+	return $resultat; 
+}
 ?>

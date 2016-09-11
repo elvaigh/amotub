@@ -29,11 +29,12 @@ if(isset($_SESSION['pseudo']) && $_SESSION['pseudo']!=''){
 	   		</div> -->
 
 	   		<div id="droite">
-	   		<!--<form action="../controleur/controleur.php" method="POST" align="center" id="search" >
+	   			<!--
+	   		<form action="../vue/recherche.php" method="POST" align="center" id="search" >
 		          <p style="text-align: center; ">Recherche
 		            <input type="text" name="search" id='inputSearch'/>
-		            <a href=""> <img src="images/search.png" id="loupe"/></a></p> <!--ECRIRE LIEN POUR RECHERCHE !requetes php-->
-		        <!--</div>-!
+		            <a href="../vue/recherche.php"> <img src="images/search.png" id="loupe"/></a>
+		          </p>
 	   		</form>  -->
 
 	   			<img src='images/english.png' class="icones"/>

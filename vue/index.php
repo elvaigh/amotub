@@ -55,13 +55,15 @@ include_once("header.php");
 
     </div>
     <!-- /.intro-header -->
-
+    <audio src="Developers.mp3" controls></audio>
+    <video src="Developers.webm" controls></video>
    <?php 
 	if(isset($_SESSION['pseudo'])&&$_SESSION['pseudo']!=null){
 		echo '<p class="widget-title">Vous êtes connecté '.' '.$_SESSION['pseudo'].'</p>';
 
 	}
-	 include_once("footer.php")
+
+	 include_once("footer.php");
  ?>
 
 
