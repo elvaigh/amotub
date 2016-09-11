@@ -1,7 +1,8 @@
 <?php
-include_once("header.php");
-include_once("../model/model.php");
+session_start();
 if( isset($_POST['search']) && $_POST['search']!=''){
+	include_once("header.php");
+	include_once("../model/model.php");
 	$result=search(htmlspecialchars($_POST['search']));
 	if($result){
 		while($donnees = mysql_fetch_array($result)) // on fait un while pour afficher la liste des fonctions trouvées, ainsi que l'id qui permettra de faire le lien vers la page de la fonction

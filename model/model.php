@@ -1,5 +1,4 @@
 <?php
-session_start();
 function login($pseudo,$mdp){
 	try{
 		$bdd= new PDO('mysql:host=localhost;dbname=bacenpoche0','root','',array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));

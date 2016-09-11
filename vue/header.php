@@ -21,39 +21,16 @@ if(isset($_SESSION['pseudo']) && $_SESSION['pseudo']!=''){
 <body>
 
 	<div id="hautDePage">
-
 		<div id="top">
 			<div id="bleu">
 		   		<div id="droite">
-
-		   			<img src='images/english.png' class="icones"/>
-		   			<label>ENG</label>
-
-<<<<<<< HEAD
-	   		<div id="droite">
-	   			<!--
-	   		<form action="../vue/recherche.php" method="POST" align="center" id="search" >
-		          <p style="text-align: center; ">Recherche
-		            <input type="text" name="search" id='inputSearch'/>
-		            <a href="../vue/recherche.php"> <img src="images/search.png" id="loupe"/></a>
-		          </p>
-	   		</form>  -->
-
 	   			<img src='images/english.png' class="icones"/>
 	   			<label>ENG</label>
-
 				<div float="left" style="display: inline; margin-left: 1%"  ><img src=<?php echo $loginImg;?> style=' height:15px; with:15px;'/></div>
-	   			<!--demander à cheikh brahim a quoi ça sert -->
-
 	   			<a href=<?php echo $target;?> id="connexion" class="dropbtn" name="connexion"><?php echo $status; ?></a>
-=======
-					<div float="left" style="display: inline; margin-left: 1%"  ><img src=<?php echo $loginImg;?> style=' height:15px; with:15px;'/></div>
->>>>>>> 0f31a59a5bbb7123ff3b56f4e242792986622333
-
-		   			<a href=<?php echo $target;?> id="connexion" class="dropbtn" name="connexion"><?php echo $status; ?></a>
-		            <form action="" id="recherche">
+		            <form action="../vue/recherche.php" id="recherche" method="post">
 			            <label>Recherche</label>
-			            <input class="champ" type="text" value="" placeholder="exemple : nombres premiers"/>
+			            <input class="champ" type="text" value="" placeholder="exemple : nombres premiers" name="search"/>
 			            <a href=""> <img src="images/search.png" class="icones"/></a>
 
 		            </form>
