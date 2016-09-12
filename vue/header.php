@@ -21,17 +21,21 @@ if(isset($_SESSION['pseudo']) && $_SESSION['pseudo']!=''){
 <body>
 
 	<div id="hautDePage">
+
 		<div id="top">
 			<div id="bleu">
 		   		<div id="droite">
-	   			<img src='images/english.png' class="icones"/>
-	   			<label>ENG</label>
-				<div float="left" style="display: inline; margin-left: 1%"  ><img src=<?php echo $loginImg;?> style=' height:15px; with:15px;'/></div>
-	   			<a href=<?php echo $target;?> id="connexion" class="dropbtn" name="connexion"><?php echo $status; ?></a>
-		            <form action="../vue/recherche.php" id="recherche" method="post">
+
+		   			<img src='images/english.png' class="icones"/>
+		   			<label>العربية</label>
+
+					<div float="left" style="display: inline; margin-left: 1%"  ><img src=<?php echo $loginImg;?> style=' height:15px; with:15px;'/></div>
+
+		   			<a href=<?php echo $target;?> id="connexion" class="dropbtn" name="connexion"><?php echo $status; ?></a>
+		            <form action="" id="recherche">
 			            <label>Recherche</label>
-			            <input class="champ" type="text" value="" placeholder="exemple : nombres premiers" name="search"/>
-			            <a href=""> <img src="images/search.png" class="icones"/></a>
+			            <input class="champ" type="text" value="" placeholder="exemple : nombres premiers"/>
+			            <a href=""> <img src="images/white/loupe.png" class="icones"/></a>
 
 		            </form>
 		   		</div>
@@ -73,7 +77,7 @@ if(isset($_SESSION['pseudo']) && $_SESSION['pseudo']!=''){
 			        </li>
 
 			        <li class="dropdown menu">
-			          <a  class="dropbtn aPrincipal" name="orientation" ><span  class="icon"> <img aria-hidden="true"  class="ico" src="images/white/orientation.png"/></span><span>Orientation</span></a>
+			          <a  class="dropbtn aPrincipal" name="orientation" ><span  class="icon"> <img aria-hidden="true"  class="ico" src="images/white/decision.png"/></span><span>Orientation</span></a>
 			           <ul class="dropdown-content">
 			            <li><a href="#">Fiches Metiers</a></li>
 			            <li><a href="#">Profils</a></li>
@@ -91,7 +95,7 @@ if(isset($_SESSION['pseudo']) && $_SESSION['pseudo']!=''){
 			        </li>
 
 			        <li class="dropdown menu">
-			          <a  class="dropbtn aPrincipal" name="forum" href=""> <span  class="icon"> <img aria-hidden="true"  class="ico"src="images/white/chat.png" /></span><span>Forum</span> </a>      
+			          <a  class="dropbtn aPrincipal" name="forum" href=""> <span  class="icon"> <img aria-hidden="true"  class="ico"src="images/white/forum2.png" /></span><span>Forum</span> </a>      
 			        </li>
 
 			        <li class="menu">
